@@ -458,12 +458,12 @@
   <header>
     <div class="nav">
       <div class="brand">
-        <!-- Yaha REAL LOGO -->
+        <!-- REAL LOGO -->
         <img src="logo.png" alt="Manyam Academic Logo" class="brand-logo-img" />
 
         <div>
           <div class="brand-text-title">Manyam Academic</div>
-          <div class="brand-text-sub">Commerce & CA Foundation Coaching</div>
+          <div class="brand-text-sub">Class 11–12 Commerce & CA Foundation</div>
         </div>
       </div>
 
@@ -490,13 +490,12 @@
           Strong <span class="highlight">Commerce Base</span> for 11th, 12th & CA Foundation
         </h1>
         <p class="hero-subtitle">
-          Manyam Academic helps students understand <b>Accounts practically</b> with daily practice,
-          regular tests, and personal guidance – so they score high in Boards and build a strong base for CA.
+          Manyam Academic helps students understand <b>Commerce concepts practically</b> – Accounts, Business Studies, Economics, etc. – with daily practice, regular tests, and personal guidance so they score high in Boards and build a strong base for CA.
         </p>
         <div class="hero-points">
-          <span>Dedicated Accounts coaching</span>
+          <span>All Commerce subjects (Accounts, BST, Eco)</span>
           <span>Small batch, individual focus</span>
-          <span>Regular tests & feedback</span>
+          <span>Regular written tests & feedback</span>
           <span>Guidance for CA Foundation</span>
         </div>
         <div class="hero-actions">
@@ -504,7 +503,7 @@
           <a href="https://wa.me/917878029933" class="btn btn-outline" target="_blank">💬 WhatsApp Enquiry</a>
         </div>
         <div class="hero-note">
-          Coaching by <b>Mohit Singh</b> • Specialised in Accounts & Commerce  
+          Coaching by <b>Mohit Singh</b> • Specialised in Commerce  
           <br />Language: Hindi + English (Hinglish)
         </div>
       </div>
@@ -532,14 +531,14 @@
       <h2 class="section-title">About Manyam Academic</h2>
       <p class="section-subtitle">
         Manyam Academic is a Commerce coaching institute located at <b>Market 89, Sector 89, Gurugram</b>, 
-        focused on building a strong foundation in Accounts for Class 11, Class 12 and CA Foundation.
+        focused on building a strong foundation in all subjects of Commerce for Class 11, Class 12 and CA Foundation.
       </p>
 
       <div class="grid-3">
         <div class="card">
           <div class="card-title">Our Focus</div>
           <p>
-            We don't just solve questions – we make you <b>understand concepts</b> in a simple and practical way
+            We don't just finish the syllabus – we make you <b>understand concepts</b> in a simple and practical way
             so that you can apply them in exams as well as in real life.
           </p>
         </div>
@@ -570,21 +569,21 @@
       <div class="grid-3">
         <div class="card">
           <div class="tag">Class 11 – CBSE</div>
-          <div class="card-title">Class 11 Commerce (Accounts)</div>
+          <div class="card-title">Class 11 Commerce (All Subjects)</div>
           <ul>
-            <li>Basic concepts of accounting</li>
-            <li>NCERT + DK Goel coverage</li>
+            <li>Accounts, Business Studies, Economics</li>
+            <li>Concept building from basics</li>
             <li>Regular homework & checking</li>
-            <li>Strong base for Class 12</li>
+            <li>Strong base for Class 12 & CA</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="tag">Class 12 – CBSE</div>
-          <div class="card-title">Class 12 Commerce (Accounts)</div>
+          <div class="card-title">Class 12 Commerce (All Subjects)</div>
           <ul>
-            <li>Partnership, Company, Cash Flow etc.</li>
-            <li>Full DK Goel coverage with PYQs</li>
+            <li>Accounts, Business Studies, Economics</li>
+            <li>Board exam pattern & PYQs</li>
             <li>Exam-oriented tests & revision</li>
             <li>Special focus on weak chapters</li>
           </ul>
@@ -592,7 +591,7 @@
 
         <div class="card">
           <div class="tag">CA Foundation</div>
-          <div class="card-title">CA Foundation (Accounts & more)</div>
+          <div class="card-title">CA Foundation (Commerce Base)</div>
           <ul>
             <li>Full syllabus for May/Sept attempts</li>
             <li>Concept clarity + question practice</li>
@@ -649,7 +648,7 @@
 
       <div class="contact-wrapper">
         <div>
-          <form>
+          <form onsubmit="return false;">
             <label for="name">Name</label>
             <input id="name" type="text" placeholder="Student / Parent Name" />
 
@@ -662,8 +661,8 @@
             <label for="message">Message</label>
             <textarea id="message" placeholder="Write your query (demo, timing, fee etc.)"></textarea>
 
-            <button type="button" class="btn btn-primary" style="margin-top: 0.4rem;">
-              📩 Submit (Display Only)
+            <button type="button" class="btn btn-primary" style="margin-top: 0.4rem;" onclick="sendWhatsApp()">
+              💬 Send on WhatsApp
             </button>
           </form>
         </div>
@@ -699,5 +698,29 @@
   <footer>
     © <span class="highlight">Manyam Academic</span> · Sector 89, Gurugram · Class 11–12 Commerce & CA Foundation
   </footer>
+
+  <!-- WHATSAPP SCRIPT -->
+  <script>
+    function sendWhatsApp() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const studentClass = document.getElementById('class').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const text = `
+New enquiry from website
+
+Name: ${name}
+Phone: ${phone}
+Class: ${studentClass}
+Message: ${message}
+      `;
+
+      const whatsappNumber = '917878029933'; // 91 + 7878029933
+      const url = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(text);
+
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
