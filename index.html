@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <title>Manyam Akademik | Commerce & CA Foundation Coaching</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google verification (keep this as provided by Google) -->
+  <meta name="google-site-verification" content="HVepjJ_6ZdlyGydYwyebBSykXQSzCS6W1-_iAbVE8XQ" />
+
+  <!-- SEO & Indexing -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://manyamakademik.github.io/manyam-akademik/" />
   <meta name="description" content="Manyam Akademik - Commerce (11th & 12th) and CA Foundation coaching classes in Sector 89, Gurugram." />
 
-  <meta name="google-site-verification" content="HVepjJ_6ZdlyGydYwyebBSykXQSzCS6W1-_iAbVE8XQ" />
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Structured Data (Local business / EducationalOrganization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Manyam Akademik",
+    "url": "https://manyamakademik.github.io/manyam-akademik/",
+    "telephone": "+91 78780 29933",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Market 89 Orris, Sector 89",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "postalCode": "1220xx",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/yourprofile",
+      "https://www.facebook.com/yourpage",
+      "https://www.youtube.com/yourchannel"
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -35,422 +67,66 @@
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    /* Layout */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 255, 255, 0.97);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-    }
-
-    .nav {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0.7rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    /* REAL LOGO IMAGE */
-    .brand-logo-img {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: var(--shadow);
-    }
-
-    .brand-text-title {
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
-
-    .brand-text-sub {
-      font-size: 0.75rem;
-      color: var(--muted);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .nav-links a {
-      padding: 0.35rem 0.75rem;
-      border-radius: var(--radius-pill);
-      color: var(--muted);
-    }
-
-    .nav-links a:hover {
-      background: #e8f5e9;
-      color: var(--primary);
-    }
-
-    .nav-cta {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      font-size: 0.85rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.3rem;
-      border-radius: var(--radius-pill);
-      border: none;
-      cursor: pointer;
-      padding: 0.45rem 1.1rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .btn-primary:hover {
-      background: #144018;
-      transform: translateY(-1px);
-    }
-
-    .btn-outline {
-      border: 1px solid #c8e6c9;
-      background: var(--white);
-      color: var(--primary);
-    }
-
-    .btn-outline:hover {
-      background: #e8f5e9;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 1.2rem 1rem 2.5rem;
-    }
-
-    /* Hero */
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
-      gap: 2rem;
-      margin-top: 1.2rem;
-      align-items: center;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: var(--radius-pill);
-      background: #e8f5e9;
-      color: var(--primary);
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-bottom: 0.7rem;
-    }
-
-    .hero-title {
-      font-size: 2rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-title span.highlight {
-      color: var(--primary);
-    }
-
-    .hero-subtitle {
-      font-size: 0.96rem;
-      color: var(--muted);
-      margin-bottom: 0.9rem;
-    }
-
-    .hero-points {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.4rem 1.25rem;
-      font-size: 0.88rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-points span::before {
-      content: "✔";
-      margin-right: 0.25rem;
-      color: var(--primary);
-      font-size: 0.85rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      align-items: center;
-      margin-bottom: 0.9rem;
-    }
-
-    .hero-note {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .hero-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 1.1rem 1rem;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-card-title {
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    .hero-card-list {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 0.6rem;
-    }
-
-    .hero-card-list li {
-      margin-bottom: 0.25rem;
-    }
-
-    .hero-batch-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      padding: 0.2rem 0.55rem;
-      border-radius: var(--radius-pill);
-      font-size: 0.75rem;
-      background: #fffde7;
-      color: #8d6e00;
-      margin-bottom: 0.4rem;
-    }
-
-    .hero-fee {
-      font-size: 0.9rem;
-    }
-
-    .hero-fee strong {
-      color: var(--primary);
-      font-size: 1.05rem;
-    }
-
-    .hero-small-text {
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-
-    /* Sections */
-    section {
-      margin-top: 2.2rem;
-    }
-
-    .section-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-    }
-
-    .section-subtitle {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 0.9rem 0.9rem 1rem;
-      box-shadow: var(--shadow);
-      font-size: 0.88rem;
-    }
-
-    .card-title {
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    .tag {
-      display: inline-block;
-      font-size: 0.7rem;
-      padding: 0.18rem 0.5rem;
-      border-radius: var(--radius-pill);
-      background: #e3f2fd;
-      color: #0d47a1;
-      margin-bottom: 0.3rem;
-    }
-
-    .card ul {
-      padding-left: 1.1rem;
-    }
-
-    .card ul li {
-      margin-bottom: 0.2rem;
-    }
-
-    /* Contact */
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.2fr);
-      gap: 1rem;
-    }
-
-    form {
-      display: grid;
-      gap: 0.6rem;
-      font-size: 0.85rem;
-    }
-
-    label {
-      font-weight: 500;
-      font-size: 0.8rem;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.4rem 0.5rem;
-      border-radius: 9px;
-      border: 1px solid #ddd;
-      font-size: 0.86rem;
-      outline: none;
-    }
-
-    input:focus, textarea:focus {
-      border-color: var(--primary-light);
-      box-shadow: 0 0 0 2px #c8e6c9;
-    }
-
-    textarea {
-      min-height: 80px;
-      resize: vertical;
-    }
-
-    .contact-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 0.9rem 0.9rem 1rem;
-      box-shadow: var(--shadow);
-      font-size: 0.86rem;
-    }
-
-    .contact-line {
-      margin-bottom: 0.35rem;
-    }
-
-    .contact-label {
-      font-weight: 600;
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
-
-    .contact-value {
-      font-size: 0.9rem;
-    }
-
-    .map-placeholder {
-      margin-top: 0.6rem;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #ddd;
-      height: 180px;
-      background: #e0e0e0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      color: #555;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 2rem;
-      padding: 1rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      text-align: center;
-      border-top: 1px solid #ddd;
-      background: #fafafa;
-    }
-
-    footer span.highlight {
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-      .grid-3 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-      .contact-wrapper {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 650px) {
-      .nav-links {
-        display: none;
-      }
-      .hero-title {
-        font-size: 1.6rem;
-      }
-      .grid-3 {
-        grid-template-columns: 1fr;
-      }
-      .grid-2 {
-        grid-template-columns: 1fr;
-      }
-      main {
-        padding-inline: 0.7rem;
-      }
-    }
+    header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0.7rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display:flex; align-items:center; gap:0.6rem; }
+    .brand-logo-img { width:36px; height:36px; border-radius:50%; object-fit:cover; box-shadow: var(--shadow); }
+    .brand-text-title { font-weight:700; font-size:1.1rem; }
+    .brand-text-sub { font-size:0.75rem; color:var(--muted); }
+    .nav-links { display:flex; gap:1rem; font-size:0.9rem; }
+    .nav-links a { padding:0.35rem 0.75rem; border-radius:var(--radius-pill); color:var(--muted); }
+    .nav-links a:hover { background:#e8f5e9; color:var(--primary); }
+    .nav-cta { display:flex; gap:0.5rem; align-items:center; font-size:0.85rem; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:0.3rem; border-radius:var(--radius-pill); border:none; cursor:pointer; padding:0.45rem 1.1rem; font-size:0.9rem; font-weight:600; transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease; white-space:nowrap; }
+    .btn-primary { background:var(--primary); color:var(--white); box-shadow:var(--shadow); }
+    .btn-primary:hover { background:#144018; transform:translateY(-1px); }
+    .btn-outline { border:1px solid #c8e6c9; background:var(--white); color:var(--primary); }
+    main { max-width:1100px; margin:0 auto; padding:1.2rem 1rem 2.5rem; }
+    .hero { display:grid; grid-template-columns: minmax(0,3fr) minmax(0,2.5fr); gap:2rem; margin-top:1.2rem; align-items:center; }
+    .badge { display:inline-flex; align-items:center; gap:0.3rem; padding:0.2rem 0.6rem; border-radius:var(--radius-pill); background:#e8f5e9; color:var(--primary); font-size:0.75rem; font-weight:600; margin-bottom:0.7rem; }
+    .hero-title { font-size:2rem; font-weight:800; margin-bottom:0.5rem; }
+    .hero-title span.highlight { color:var(--primary); }
+    .hero-subtitle { font-size:0.96rem; color:var(--muted); margin-bottom:0.9rem; }
+    .hero-points { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:0.4rem 1.25rem; font-size:0.88rem; margin-bottom:1rem; }
+    .hero-points span::before { content:"✔"; margin-right:0.25rem; color:var(--primary); font-size:0.85rem; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center; margin-bottom:0.9rem; }
+    .hero-note { font-size:0.8rem; color:var(--muted); }
+    .hero-card { background:var(--white); border-radius:var(--radius-lg); padding:1.1rem 1rem; box-shadow:var(--shadow); }
+    .hero-card-title { font-weight:700; margin-bottom:0.4rem; font-size:0.95rem; }
+    .hero-card-list { font-size:0.85rem; color:var(--muted); margin-bottom:0.6rem; }
+    .hero-card-list li { margin-bottom:0.25rem; }
+    .hero-batch-chip { display:inline-flex; align-items:center; gap:0.3rem; padding:0.2rem 0.55rem; border-radius:var(--radius-pill); font-size:0.75rem; background:#fffde7; color:#8d6e00; margin-bottom:0.4rem; }
+    .hero-fee { font-size:0.9rem; }
+    .hero-fee strong { color:var(--primary); font-size:1.05rem; }
+    .hero-small-text { font-size:0.78rem; color:var(--muted); }
+    section { margin-top:2.2rem; }
+    .section-title { font-size:1.25rem; font-weight:700; margin-bottom:0.4rem; }
+    .section-subtitle { font-size:0.9rem; color:var(--muted); margin-bottom:1rem; }
+    .grid-3 { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:1rem; }
+    .grid-2 { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:1rem; }
+    .card { background:var(--white); border-radius:var(--radius-lg); padding:0.9rem 0.9rem 1rem; box-shadow:var(--shadow); font-size:0.88rem; }
+    .card-title { font-weight:600; margin-bottom:0.4rem; font-size:0.95rem; }
+    .tag { display:inline-block; font-size:0.7rem; padding:0.18rem 0.5rem; border-radius:var(--radius-pill); background:#e3f2fd; color:#0d47a1; margin-bottom:0.3rem; }
+    .card ul { padding-left:1.1rem; }
+    .card ul li { margin-bottom:0.2rem; }
+    .contact-wrapper { display:grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1.2fr); gap:1rem; }
+    form { display:grid; gap:0.6rem; font-size:0.85rem; }
+    label { font-weight:500; font-size:0.8rem; }
+    input, textarea { width:100%; padding:0.4rem 0.5rem; border-radius:9px; border:1px solid #ddd; font-size:0.86rem; outline:none; }
+    input:focus, textarea:focus { border-color:var(--primary-light); box-shadow:0 0 0 2px #c8e6c9; }
+    textarea { min-height:80px; resize:vertical; }
+    .contact-card { background:var(--white); border-radius:var(--radius-lg); padding:0.9rem 0.9rem 1rem; box-shadow:var(--shadow); font-size:0.86rem; }
+    .contact-line { margin-bottom:0.35rem; }
+    .contact-label { font-weight:600; font-size:0.82rem; color:var(--muted); }
+    .contact-value { font-size:0.9rem; }
+    .map-placeholder { margin-top:0.6rem; border-radius:12px; overflow:hidden; border:1px solid #ddd; height:180px; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:0.8rem; color:#555; }
+    footer { margin-top:2rem; padding:1rem; font-size:0.8rem; color:var(--muted); text-align:center; border-top:1px solid #ddd; background:#fafafa; }
+    footer span.highlight { color:var(--primary); font-weight:600; }
+    @media (max-width:900px) { .hero { grid-template-columns:1fr; } .grid-3 { grid-template-columns: repeat(2, minmax(0,1fr)); } .contact-wrapper { grid-template-columns:1fr; } }
+    @media (max-width:650px) { .nav-links { display:none; } .hero-title { font-size:1.6rem; } .grid-3 { grid-template-columns:1fr; } .grid-2 { grid-template-columns:1fr; } main { padding-inline:0.7rem; } }
   </style>
 </head>
 <body>
@@ -458,8 +134,8 @@
   <header>
     <div class="nav">
       <div class="brand">
-        <!-- REAL LOGO -->
-        <img src="logo.png" alt="Manyam Akademik Logo" class="brand-logo-img" />
+        <!-- LOGO: use the uploaded original file name in repo -->
+        <img src="logo.png.jpeg" alt="Manyam Akademik Logo" class="brand-logo-img" />
 
         <div>
           <div class="brand-text-title">Manyam Akademik</div>
@@ -728,14 +404,7 @@
       const studentClass = document.getElementById('class').value.trim();
       const message = document.getElementById('message').value.trim();
 
-      const text = `
-New enquiry from website
-
-Name: ${name}
-Phone: ${phone}
-Class: ${studentClass}
-Message: ${message}
-      `;
+      const text = `\nNew enquiry from website\n\nName: ${name}\nPhone: ${phone}\nClass: ${studentClass}\nMessage: ${message}\n      `;
 
       const whatsappNumber = '917878029933'; // 91 + 7878029933
       const url = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(text);
