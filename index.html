@@ -2,158 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Manyam Akademik — Commerce & CA Foundation | Sector 89, Gurugram</title>
+  <title>Manyam Akademik — Commerce & CA Foundation Coaching</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Manyam Akademik — premium Commerce coaching for Class 11, 12 & CA Foundation. Small batches, doubt support, PYQs & proven strategies. Book a free demo." />
+  <meta name="description" content="Manyam Akademik — Class 11 & 12 Commerce and CA Foundation coaching in Sector 89, Gurugram. Small batches, PYQs, personalised doubt support. Book a free demo." />
   <meta property="og:title" content="Manyam Akademik — Commerce & CA Foundation Coaching" />
   <meta property="og:description" content="Premium Commerce coaching in Sector 89, Gurugram. Small batches, personal attention, CA Foundation focused." />
   <meta property="og:image" content="og-image.png" />
   <meta name="theme-color" content="#0b3d91" />
-  <!-- favicon (replace with your favicon file) -->
   <link rel="icon" href="favicon.ico" />
 
   <style>
-    /* -------------------------------
-       THEME (Deep blue + Emerald accent)
-       ------------------------------- */
     :root{
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --text: #0f1724;
-      --muted: #58606b;
-      --primary: #0b3d91;     /* deep blue */
-      --primary-600: #0a47b1;
-      --accent: #1b8a6b;      /* emerald */
-      --glass: rgba(255,255,255,0.75);
-      --radius: 14px;
-      --shadow-soft: 0 8px 30px rgba(12,20,40,0.06);
-      --shadow-sm: 0 6px 16px rgba(12,20,40,0.06);
-      --container: 1100px;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#0f1724;
+      --muted:#58606b;
+      --primary:#0b3d91;
+      --primary-600:#0a47b1;
+      --accent:#1b8a6b;
+      --radius:12px;
+      --shadow-soft:0 10px 30px rgba(12,20,40,0.06);
+      --container:1100px;
     }
-
-    /* -------------------------------
-       Base
-       ------------------------------- */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      font-family: Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-      background:var(--bg);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
+      margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+      background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;
       line-height:1.5;
-      -webkit-text-size-adjust:100%;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
 
-    /* -------------------------------
-       Layout
-       ------------------------------- */
-    .wrap{max-width:var(--container);margin:0 auto;padding:1.1rem}
-    header{
-      position:sticky;top:0;z-index:70;
-      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.82));
-      backdrop-filter: blur(6px);
-      box-shadow:var(--shadow-sm);
-    }
-    .nav{max-width:var(--container);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0.9rem 1rem;gap:1rem}
+    .wrap{max-width:var(--container);margin:0 auto;padding:1rem}
+    header{position:sticky;top:0;z-index:80;background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(255,255,255,0.9));backdrop-filter:blur(6px);box-shadow:0 4px 14px rgba(12,20,40,0.03)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.8rem 1rem}
     .brand{display:flex;align-items:center;gap:0.8rem}
-    .logo{
-      width:48px;height:48px;border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm);background:#fff;display:grid;place-items:center;
-    }
-    .brand h1{font-size:1rem;margin:0;font-weight:800;color:var(--primary)}
+    .logo{width:50px;height:50px;border-radius:10px;overflow:hidden;background:#fff;display:grid;place-items:center;box-shadow:var(--shadow-soft)}
+    .brand h1{margin:0;font-size:1.05rem;color:var(--primary)}
     .brand p{margin:0;font-size:0.78rem;color:var(--muted)}
 
-    .nav-links{display:flex;gap:0.6rem;align-items:center}
-    .nav-links a{padding:0.45rem 0.85rem;border-radius:999px;font-weight:600;color:var(--muted);font-size:0.92rem}
+    .nav-links{display:flex;gap:0.7rem;align-items:center}
+    .nav-links a{padding:0.45rem 0.8rem;border-radius:999px;font-weight:600;color:var(--muted)}
     .nav-links a:hover{background:#eef4ff;color:var(--primary)}
 
-    .cta{display:flex;gap:0.5rem}
-    .btn{display:inline-flex;align-items:center;gap:0.55rem;padding:0.55rem 1rem;border-radius:999px;font-weight:700;cursor:pointer}
-    .btn-primary{background:linear-gradient(90deg,var(--primary),var(--primary-600));color:#fff;box-shadow:var(--shadow-sm)}
+    .cta{display:flex;gap:0.6rem}
+    .btn{display:inline-flex;align-items:center;gap:0.55rem;padding:0.6rem 1rem;border-radius:999px;font-weight:700;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--primary),var(--primary-600));color:#fff;box-shadow:0 6px 18px rgba(10,60,140,0.12)}
     .btn-outline{background:#fff;border:1px solid #dbe7ff;color:var(--primary)}
 
-    /* -------------------------------
-       HERO
-       ------------------------------- */
-    .hero{
-      max-width:var(--container);margin:1.4rem auto 0;padding:1.2rem;
-      display:grid;grid-template-columns:1fr 420px;gap:1.4rem;align-items:center;
-    }
-    .hero-left{padding:1rem}
-    .badge{display:inline-flex;align-items:center;gap:0.45rem;padding:0.32rem 0.7rem;border-radius:999px;background:#ecf6f4;color:var(--accent);font-weight:700;font-size:0.85rem}
-    .title{font-size:2.0rem;line-height:1.02;margin:0.7rem 0 0.6rem;font-weight:900}
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:1.4rem;align-items:center;margin-top:1.2rem;padding:1.2rem 1rem}
+    .badge{display:inline-flex;align-items:center;padding:0.32rem 0.7rem;border-radius:999px;background:#ecf6f4;color:var(--accent);font-weight:700}
+    .title{font-size:1.95rem;font-weight:900;margin:0.6rem 0 0.6rem;line-height:1.05}
     .title .accent{color:var(--accent)}
     .lead{color:var(--muted);font-size:1rem;margin-bottom:1rem}
-    .points{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:0.5rem 1rem;margin-bottom:1rem}
+    .points{display:grid;grid-template-columns:repeat(2,1fr);gap:0.5rem 1rem;margin-bottom:1rem}
     .points li{list-style:none;color:var(--muted);font-weight:600}
     .points li::before{content:"✔";margin-right:0.5rem;color:var(--accent)}
-
     .hero-actions{display:flex;gap:0.7rem;flex-wrap:wrap}
-    .stat-row{display:flex;gap:0.8rem;margin-top:1.2rem}
-    .stat{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:0.7rem 0.9rem;text-align:center;box-shadow:var(--shadow-soft);min-width:92px}
-    .stat .num{font-weight:800;color:var(--primary);font-size:1.05rem}
-    .stat .txt{font-size:0.85rem;color:var(--muted)}
 
-    /* HERO CARD */
-    .hero-card{
-      background:linear-gradient(180deg,#fff,#fbfdff);
-      border-radius:12px;padding:1rem;box-shadow:var(--shadow-soft);
-    }
-    .hero-card h3{margin:0 0 0.4rem 0;color:var(--primary);font-size:1rem}
-    .hero-card p{margin:0;color:var(--muted);font-size:0.92rem;margin-bottom:0.6rem}
+    .hero-card{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:1rem;box-shadow:var(--shadow-soft)}
+    .hero-image{width:100%;height:180px;border-radius:10px;background:linear-gradient(135deg, rgba(11,61,145,0.08), rgba(27,138,107,0.06));display:grid;place-items:center;overflow:hidden}
 
-    /* placeholder for hero image */
-    .hero-image{
-      width:100%;height:180px;border-radius:10px;background:
-      linear-gradient(135deg, rgba(11,61,145,0.08), rgba(27,138,107,0.06));
-      display:grid;place-items:center;color:var(--primary);font-weight:700;
-      box-shadow:var(--shadow-sm);overflow:hidden;
-    }
-    .hero-image img{width:100%;height:100%;object-fit:cover;display:block;border-radius:8px}
+    /* sections */
+    section{margin-top:2rem}
+    .section-title{font-size:1.25rem;font-weight:800;margin-bottom:0.5rem}
+    .section-sub{color:var(--muted);margin-bottom:1rem}
 
-    /* -------------------------------
-       FEATURES / COURSES
-       ------------------------------- */
-    .section{max-width:var(--container);margin:2rem auto;padding:0 1rem}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-    .card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow-soft)}
+    .card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:var(--shadow-soft)}
     .card h4{margin:0 0 0.6rem 0;color:var(--primary)}
     .card p{margin:0;color:var(--muted)}
 
-    /* Testimonials slider (CSS-only) */
-    .testimonials{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem}
-    .testimonial{
-      background:linear-gradient(180deg,#fff,#fbfdff);padding:1rem;border-radius:12px;box-shadow:var(--shadow-soft);
-      display:flex;gap:0.9rem;align-items:flex-start;
-    }
-    .avatar{width:56px;height:56px;border-radius:12px;background:#eef4ff;display:grid;place-items:center;font-weight:700;color:var(--primary)}
-    .t-body{font-size:0.95rem;color:var(--muted)}
-    .t-name{font-weight:800;color:var(--primary);font-size:0.95rem;margin-bottom:4px}
+    /* testimonials */
+    .testimonials{display:grid;gap:1rem;margin-top:1rem}
+    .testimonial{display:flex;gap:0.9rem;background:linear-gradient(180deg,#fff,#fbfdff);padding:1rem;border-radius:10px;box-shadow:var(--shadow-soft);align-items:flex-start}
+    .avatar{width:56px;height:56px;border-radius:10px;background:#eef4ff;display:grid;place-items:center;font-weight:800;color:var(--primary)}
 
-    /* FAQ */
+    /* faq */
     .faq{margin-top:1rem}
-    .faq-item{background:#fff;border-radius:10px;padding:0.8rem;margin-bottom:0.6rem;box-shadow:var(--shadow-sm)}
+    .faq-item{background:#fff;border-radius:10px;padding:0.8rem;margin-bottom:0.6rem;box-shadow:0 6px 16px rgba(12,20,40,0.04)}
     .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:700;color:var(--primary)}
     .faq-a{color:var(--muted);margin-top:0.5rem;display:none}
 
-    /* Contact */
+    /* contact */
     .contact-wrap{display:grid;grid-template-columns:1fr 420px;gap:1rem;align-items:start}
-    form{display:grid;gap:0.6rem}
-    label{font-weight:700;color:var(--text);font-size:0.9rem}
+    form{display:grid;gap:0.7rem}
+    label{font-weight:700;color:var(--text);font-size:0.92rem}
     input,textarea,select{padding:0.6rem;border-radius:10px;border:1px solid #e7eefb;font-size:0.95rem}
-    .contact-card{background:var(--card);border-radius:12px;padding:0;box-shadow:var(--shadow-soft);overflow:hidden}
+    .contact-card{background:var(--card);border-radius:10px;padding:0;box-shadow:var(--shadow-soft);overflow:hidden}
+    .map-wrap iframe{width:100%;height:260px;border:0;display:block}
 
-    /* Map */
-    .map-wrap iframe{display:block;width:100%;height:260px;border:0}
+    footer{padding:1.2rem;text-align:center;color:var(--muted);border-top:1px solid #eef2ff;margin-top:2rem}
 
-    /* Footer */
-    footer{padding:1.2rem;background:transparent;text-align:center;color:var(--muted);margin-top:2rem;border-top:1px solid #eef2ff}
-
-    /* Responsive */
     @media (max-width:980px){
       .hero{grid-template-columns:1fr}
       .contact-wrap{grid-template-columns:1fr}
@@ -162,11 +104,10 @@
     @media (max-width:650px){
       .grid-3{grid-template-columns:1fr}
       .nav-links{display:none}
-      .hero-image{height:140px}
     }
 
-    /* subtle entrance animations */
-    .fade-in{opacity:0;transform:translateY(8px);animation:fadeUp 0.65s forwards}
+    /* simple animations */
+    .fade-in{opacity:0;transform:translateY(8px);animation:fadeUp 0.6s forwards}
     .delay-1{animation-delay:0.05s}.delay-2{animation-delay:0.12s}.delay-3{animation-delay:0.18s}
     @keyframes fadeUp{to{opacity:1;transform:none}}
   </style>
@@ -177,10 +118,7 @@
   <header>
     <div class="nav wrap" role="navigation" aria-label="Main navigation">
       <div class="brand">
-        <div class="logo">
-          <!-- replace logo.png with your optimized logo -->
-          <img src="logo.png" alt="Manyam Akademik Logo" style="width:44px;height:44px;object-fit:cover" />
-        </div>
+        <div class="logo"><img src="logo.png" alt="Manyam Akademik Logo" style="width:44px;height:44px;object-fit:cover" /></div>
         <div>
           <h1>Manyam Akademik</h1>
           <p>Class 11–12 Commerce & CA Foundation</p>
@@ -204,13 +142,13 @@
   <!-- HERO -->
   <main>
     <section class="hero wrap" aria-labelledby="hero-heading">
-      <div class="hero-left fade-in delay-1">
+      <div class="fade-in delay-1">
         <div class="badge">Offline + Online • Sector 89, Gurugram</div>
         <h2 id="hero-heading" class="title">Strong <span class="accent">Commerce Base</span> for Class 11, 12 & CA Foundation</h2>
         <p class="lead">Practical concepts, daily practice, previous-year patterns and doubt support — structured to help students clear Boards & CA Foundation.</p>
 
-        <ul class="points" aria-hidden="false" role="list">
-          <li>Small batches, personal doubts</li>
+        <ul class="points" role="list" aria-hidden="false">
+          <li>Small batches, personal doubt support</li>
           <li>Chapterwise tests & PYQs</li>
           <li>Strategies for first-attempt success</li>
           <li>Offline & Online options</li>
@@ -221,39 +159,36 @@
           <a class="btn btn-outline" href="https://wa.me/917878029933" target="_blank">💬 WhatsApp</a>
         </div>
 
-        <div class="stat-row">
-          <div class="stat">
-            <div class="num">70+</div>
-            <div class="txt">Target Batch Size</div>
+        <div style="display:flex;gap:0.8rem;margin-top:1.1rem">
+          <div style="background:linear-gradient(180deg,#fff,#fbfdff);padding:0.7rem 0.9rem;border-radius:10px;box-shadow:var(--shadow-soft);min-width:110px;text-align:center">
+            <div style="font-weight:800;color:var(--primary);font-size:1.05rem">70+</div>
+            <div style="color:var(--muted);font-weight:700">Target Batch</div>
           </div>
-          <div class="stat">
-            <div class="num">236</div>
-            <div class="txt">Recent Video Views</div>
-          </div>
-          <div class="stat">
-            <div class="num">15</div>
-            <div class="txt">Demo Counselling (Free)</div>
+          <div style="background:linear-gradient(180deg,#fff,#fbfdff);padding:0.7rem 0.9rem;border-radius:10px;box-shadow:var(--shadow-soft);min-width:110px;text-align:center">
+            <div style="font-weight:800;color:var(--primary);font-size:1.05rem">236</div>
+            <div style="color:var(--muted);font-weight:700">Recent Video Views</div>
           </div>
         </div>
       </div>
 
       <aside class="hero-card fade-in delay-2" aria-hidden="false">
         <div class="hero-image" aria-hidden="true">
-          <!-- Replace hero.jpg with a real classroom/brand image -->
-          <img src="hero.jpg" alt="Manyam Akademik classroom or banner" />
+          <!-- Replace hero.jpg with your classroom / banner image -->
+          <img src="hero.jpg" alt="Manyam Akademik classroom banner" />
         </div>
 
-        <h3>CA Foundation • Full Course</h3>
-        <p>Complete syllabus, concept + question practice, mock tests & personal doubt support. Fee: <strong style="color:var(--primary)">₹36,000</strong></p>
-        <p style="margin-top:8px"><a class="btn btn-outline" href="#contact">Enquire / Reserve Seat</a></p>
+        <h3 style="margin-top:12px;">CA Foundation • Full Course</h3>
+        <p style="color:var(--muted);margin-bottom:8px;">Complete syllabus, concept + question practice, mock tests & personal doubt support.</p>
+        <p style="margin:0 0 8px 0">Fee: <strong style="color:var(--primary)">₹36,000</strong></p>
+        <p style="margin:0"><a class="btn btn-outline" href="#contact">Enquire / Reserve Seat</a></p>
       </aside>
     </section>
 
-    <!-- ABOUT / FEATURES -->
+    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="wrap">
         <h3 class="section-title">About Manyam Akademik</h3>
-        <p class="section-subtitle">Located at Market 89, Sector 89 — focused on clear concepts, repeated practice and exam-smart answers.</p>
+        <p class="section-sub">Located at Market 89, Sector 89 — focused on clear concepts, repeated practice and exam-smart answers.</p>
 
         <div class="grid-3 fade-in delay-3" role="list">
           <div class="card" role="listitem">
@@ -276,23 +211,23 @@
     <section id="courses" class="section">
       <div class="wrap">
         <h3 class="section-title">Courses Offered</h3>
-        <p class="section-subtitle">Choose the batch and mode that fits your schedule. Demo class available for all courses.</p>
+        <p class="section-sub">Demo available for all batches — join a free demo and decide.</p>
 
         <div class="grid-3">
           <div class="card">
-            <div class="tag" style="background:#eef6ff;color:var(--primary)">Class 11 – CBSE</div>
+            <div style="display:inline-block;background:#eef6ff;color:var(--primary);padding:6px 8px;border-radius:999px;font-weight:800;font-size:0.85rem;margin-bottom:8px">Class 11 – CBSE</div>
             <h4>Class 11 Commerce</h4>
-            <p>Accounts, Business Studies, Economics — strong foundation & homework checks.</p>
+            <p>Accounts, BST, Economics — foundation building with homework & checks.</p>
           </div>
 
           <div class="card">
-            <div class="tag" style="background:#fff7ec;color:#b45f00">Class 12 – CBSE</div>
+            <div style="display:inline-block;background:#fff7ec;color:#b45f00;padding:6px 8px;border-radius:999px;font-weight:800;font-size:0.85rem;margin-bottom:8px">Class 12 – CBSE</div>
             <h4>Class 12 Commerce</h4>
             <p>Board-oriented strategy, revision, PYQs and exam practice.</p>
           </div>
 
           <div class="card">
-            <div class="tag" style="background:#eefaf4;color:var(--accent)">CA Foundation</div>
+            <div style="display:inline-block;background:#eefaf4;color:var(--accent);padding:6px 8px;border-radius:999px;font-weight:800;font-size:0.85rem;margin-bottom:8px">CA Foundation</div>
             <h4>CA Foundation (Commerce Base)</h4>
             <p>Structured plan for May/Sept attempts, mocks and doubt support.</p>
           </div>
@@ -309,16 +244,16 @@
           <div class="testimonial">
             <div class="avatar">A</div>
             <div>
-              <div class="t-name">Anjali — Parent</div>
-              <div class="t-body">"Clear teaching style, timely updates and real improvement in test scores. Highly recommended."</div>
+              <div style="font-weight:800;color:var(--primary)">Anjali — Parent</div>
+              <div style="color:var(--muted)">"Clear teaching style, timely updates and real improvement in test scores. Highly recommended."</div>
             </div>
           </div>
 
           <div class="testimonial">
             <div class="avatar">R</div>
             <div>
-              <div class="t-name">Rohit — Student</div>
-              <div class="t-body">"Notes are concise and practice sessions make concepts stick. Mohit sir explains simply."</div>
+              <div style="font-weight:800;color:var(--primary)">Rohit — Student</div>
+              <div style="color:var(--muted)">"Notes are concise and practice sessions make concepts stick. Mohit sir explains simply."</div>
             </div>
           </div>
         </div>
@@ -347,7 +282,7 @@
     <section id="contact" class="section">
       <div class="wrap">
         <h3 class="section-title">Contact & Location</h3>
-        <p class="section-subtitle">Reach out for demo, batch details or fee discussion.</p>
+        <p class="section-sub">Reach out for demo, batch details or fee discussion.</p>
 
         <div class="contact-wrap">
           <div>
@@ -373,9 +308,9 @@
                 <button type="button" class="btn btn-primary" onclick="sendWhatsApp()">💬 Send on WhatsApp</button>
                 <a class="btn btn-outline" href="tel:+917878029933">📞 Call</a>
               </div>
-            </form>
 
-            <p style="margin-top:0.9rem;color:var(--muted)">Referral Offer: Refer a student and get ₹500 off / month on fees. Ask during counselling.</p>
+              <p style="margin-top:0.9rem;color:var(--muted)">Referral Offer: Refer a student and get ₹500 off / month on fees. Ask during counselling.</p>
+            </form>
           </div>
 
           <aside class="contact-card">
@@ -385,7 +320,7 @@
             </div>
 
             <div class="map-wrap" style="margin-top:6px">
-              <!-- Exact Google Map embed (verified) -->
+              <!-- Exact Google Map embed (verified listing) -->
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.741156982815!2d76.934441!3d28.423486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1706968d7df7%3A0x49ab9df0106969e1!2sManyam%20Akademik!5e0!3m2!1sen!2sin!4v1702312345678!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
 
               <div style="padding:0.9rem 1rem">
@@ -396,6 +331,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -409,24 +345,23 @@
       q.addEventListener('click', ()=>{
         const a = item.querySelector('.faq-a');
         const open = a.style.display === 'block';
-        // close all
         document.querySelectorAll('.faq-a').forEach(x=>x.style.display='none');
         document.querySelectorAll('.faq-q .toggle').forEach(t=>t.textContent='+');
         if(!open){ a.style.display='block'; q.querySelector('.toggle').textContent='−' }
       });
     });
 
-    // Simple testimonial rotation (auto)
+    // Testimonial rotation
     (function rotateTestimonials(){
       const items = Array.from(document.querySelectorAll('.testimonials .testimonial'));
       if(!items.length) return;
-      let idx = 0;
+      let idx=0;
       items.forEach((it,i)=>{ if(i!==0) it.style.display='none' });
       setInterval(()=>{
         items[idx].style.display='none';
-        idx = (idx + 1) % items.length;
+        idx=(idx+1)%items.length;
         items[idx].style.display='flex';
-      }, 5000);
+      },5000);
     })();
 
     // WhatsApp send
@@ -435,7 +370,7 @@
       const phone = document.getElementById('phone').value.trim();
       const studentClass = document.getElementById('class').value.trim();
       const message = document.getElementById('message').value.trim();
-      const text = `New enquiry for Manyam Akademik
+      const text = `New enquiry - Manyam Akademik
 Name: ${name}
 Phone: ${phone}
 Class: ${studentClass}
